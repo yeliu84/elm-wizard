@@ -125,7 +125,7 @@ viewStep getIconLabel step =
           [ class "wizardStepIconContainer" ]
           [ icon ]
       , div
-          [ class "wizardSteplabelContainer" ]
+          [ class "wizardStepLabelContainer" ]
           [ label ]
       ]
 
