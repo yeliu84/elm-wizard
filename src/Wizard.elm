@@ -1,3 +1,6 @@
+module Wizard exposing (Status(..), Model, Msg(..), init, update, view)
+
+
 import Html exposing (Html, div, text)
 import Html.Attributes exposing (class)
 import Html.Events exposing (onClick)
@@ -15,7 +18,7 @@ main =
 
 defaultGetIconLabel : Int -> (Html a, Html b)
 defaultGetIconLabel id =
-  (,) (text (toString id)) (text (toString id))
+  (,) (text (toString id)) (text ("Step " ++ (toString id)))
 
 
 defaultGetContent : Int -> Html msg
