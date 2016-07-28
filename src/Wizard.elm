@@ -107,8 +107,14 @@ updateStep currentId step =
 view : (Int -> (Html Msg, Html Msg)) -> (Int -> Html Msg) -> Model -> Html Msg
 view getIconLabel getContent model =
   div
-    [ class "wizardSteps" ]
-    ((List.map (viewStep getIconLabel) model.steps) ++ [ getContent model.currentId ])
+    [ class "wizard" ]
+    [ div
+        [ class "wizardSteps" ]
+        (List.map (viewStep getIconLabel) model.steps)
+    , div
+        [ class "wizardContent" ]
+        [ getContent model.currentId ]
+    ]
 
 
 viewStep : (Int -> (Html Msg, Html Msg)) -> Step -> Html Msg

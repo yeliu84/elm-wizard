@@ -1,0 +1,60 @@
+.wizardSteps {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.wizardStep {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.wizardStep::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 22.5px;
+  left: 50%;
+}
+
+.wizardStep:last-of-type::before {
+  display: none;
+}
+
+.wizardStepIconContainer {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #aaa;
+  border-radius: 100%;
+  margin-bottom: 15px;
+  z-index: 1;
+  background-color: #fcfcfc;
+}
+
+.wizardStep.past .wizardStepIconContainer,
+.wizardStep.current .wizardStepIconContainer {
+  border-style: solid;
+}
+
+.wizardStep.past .wizardStepIconContainer {
+  background-color: #bbb;
+}
+
+.wizardStep.past::before {
+  background-color: #bbb;
+}
+
+.wizardStep.current .wizardStepIconContainer {
+  border-color: #333;
+  background-color: #888;
+  color: #fff;
+}

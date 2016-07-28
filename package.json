@@ -1,0 +1,37 @@
+{
+  "name": "elm-wizard",
+  "version": "1.0.0",
+  "description": "Wizard component in elm",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "start": "babel-node scripts/run dev",
+    "dev": "babel-node scripts/run dev",
+    "build": "babel-node scripts/run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaux/elm-wizard.git"
+  },
+  "keywords": [
+    "wizard",
+    "elm"
+  ],
+  "author": "Ye Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaux/elm-wizard/issues"
+  },
+  "homepage": "https://github.com/jaux/elm-wizard#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "elm-webpack-loader": "^3.0.3",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
