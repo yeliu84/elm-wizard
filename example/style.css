@@ -47,6 +47,7 @@ button {
   font-size: 14px;
   color: #666;
   outline: none;
+  cursor: pointer;
 }
 
 button:hover {
