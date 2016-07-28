@@ -15,3 +15,4 @@ The source code of the demo is in the [example][] directory. Checking out the [M
 
 [Demo]: http://jaux.net/elm-wizard
 [example]: https://github.com/jaux/elm-wizard/blob/master/example
+[Main.elm]: https://github.com/jaux/elm-wizard/blob/master/example/Main.elm
