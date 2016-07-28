@@ -82,7 +82,7 @@ view model =
     [ class "container" ]
     [ h1
         []
-        [ text "Elm Wizard Example" ]
+        [ text "Elm Wizard Demo" ]
     , div
         [ class "wizardContainer" ]
         [ App.map Child (Wizard.view getIconLabel getStepContent model) ]

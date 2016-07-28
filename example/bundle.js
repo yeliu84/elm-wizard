@@ -8090,7 +8090,7 @@
 						[]),
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html$text('Elm Wizard Example')
+							_elm_lang$html$Html$text('Elm Wizard Demo')
 						])),
 					A2(
 					_elm_lang$html$Html$div,
